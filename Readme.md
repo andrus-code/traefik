@@ -53,3 +53,23 @@ Traefik provides a built-in web dashboard that allows you to monitor the health 
 Traefik supports middleware, which allows you to apply various transformations to your HTTP requests, such as authentication, rate-limiting, redirecting, or modifying headers.
 
 **Example:** You can configure Traefik to apply basic authentication to certain routes or limit how many requests a user can make within a given time frame.
+
+
+
+
+# Hands on
+
+```bash
+  docker-compose -f docker-compose.yml up -d
+```
+
+```bash
+   From browser:  http://localhost/
+
+   404 Page Not Found
+```
+
+ What happens ?
+ 
+
+
