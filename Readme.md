@@ -1,3 +1,3 @@
 # Traefik on VPS
 
-
+Traefik is a modern, open-source reverse proxy and load balancer designed to manage and route HTTP and HTTPS traffic to different services within your infrastructure. It's particularly useful in microservices environments, where dynamic and rapidly changing configurations are common. Traefik automatically discovers services and handles the routing to them, making it a powerful tool for managing web traffic in containers or distributed systems.
