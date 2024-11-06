@@ -1,9 +1,15 @@
 version: '3.8'
 services: 
+  
+  #nginx.app.localhost 
+  
+  #apache.app.localhost
+  
   traefik: 
     image: traefik:v2.3.6
     ports: 
       - 80:80
+      - 8080:8080
     volumes: 
       - /var/run/docker.sock:/var/run/docker.sock
       - ./traefik.yml:/traefik.yml

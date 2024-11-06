@@ -60,16 +60,17 @@ Traefik supports middleware, which allows you to apply various transformations t
 # Hands on
 
 ```bash
+  docker-compose -f docker-compose.yml down -v
   docker-compose -f docker-compose.yml up -d
 ```
 
 ```bash
-   From browser:  http://localhost/
+   From browser:  http://localhost:8080
 
-   404 Page Not Found
+   
 ```
 
- What happens ?
+![dashboard traefik](./img/dashboard.png)
  
 
 
