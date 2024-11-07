@@ -1,6 +1,7 @@
 #Access dashboard insecure port 8080
 api:
-  insecure: true
+  #insecure: true   #if we don't have enable middleware=auth in docker-compose.yml
+  insecure: false   #if enable "middlewares=auth" in docker-compose.yml 
 
 providers:
   docker:

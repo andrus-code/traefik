@@ -89,7 +89,19 @@ Readme.md
 traefik.yml
 ```
 
-    
+## Authentication in dashboard on traefik
+
+```bash
+ - "traefik.http.routers.api.rule=Host(`traefik.app.test`)"  #add traefik.app.test in /etc/hosts before
+ - "traefik.http.routers.api.service=api@internal"
+ - "traefik.http.routers.api.middlewares=auth"
+ - "traefik.http.middlewares.auth.basicauth.users=admin:{SHA}fEqNCco3Yq9h5ZUglD3CZJT4lBs=" # user: admin pass:123456
+   
+```
+
+```bash
+  From browser:  http://traefik.app.test
+```
 
 
 
