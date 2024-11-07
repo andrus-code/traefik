@@ -67,10 +67,30 @@ Traefik supports middleware, which allows you to apply various transformations t
 ```bash
    From browser:  http://localhost:8080
 
-   
+```
+![dashboard traefik](./img/dashboard.png)
+
+
+## Services apache and nginx
+
+Now we are add 2 services (firstly we need add names in /etc/hosts:  apache.app.test and nginx.app.test )
+Both services are connect to the same network `traefik_net`
+
+Then we have this structure:
+
+```bash
+Devops-traefik
+    services
+        | apache
+        | nginx
+docker-compose.yml
+acme.json
+Readme.md   
+traefik.yml
 ```
 
-![dashboard traefik](./img/dashboard.png)
- 
+    
+
+
 
 
